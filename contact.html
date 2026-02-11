@@ -1,0 +1,165 @@
+<html>
+<title>Contact Me</title>
+
+<style>
+:root {
+  --purple: #4b1d4d;
+  --light-purple: #f5eef7;
+  --text-gray: #555;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #333;
+}
+.contact-section {
+  padding: 80px 8%;
+}
+
+.contact-title {
+  font-size: 64px;
+  color: var(--purple);
+  margin-bottom: 40px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--text-gray);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #eee;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.contact-text {
+  font-size: 16px;
+  line-height: 1.6;}
+
+
+.quote-section {
+  background: var(--purple);
+  color: #fff;
+  padding: 100px 8%;
+}
+
+.quote-section h2 {
+  font-size: 48px;
+  max-width: 700px;
+  margin: 0 0 20px;
+}
+.quote-section p {
+  opacity: 0.8;
+  font-size: 14px;}
+footer {
+  padding: 40px 8%;
+  border-top: 1px solid #eee;
+}
+.footer-name {
+  font-size: 36px;
+  font-weight: bold;
+}
+.socials {
+  margin-top: 10px;
+}
+.socials a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 48px;
+  }
+
+  .quote-section h2 {
+    font-size: 36px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="contact-section">
+  <h1 class="contact-title">Contact me</h1>
+
+  <div class="contact-grid">
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Your name">
+
+      <label>Last name</label>
+      <input type="text" placeholder="Your last name">
+
+      <label>Your email*</label>
+      <input type="email" placeholder="Your email address" required>
+
+      <label>Message*</label>
+      <textarea placeholder="Enter your message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="contact-text">
+Contact Us
+We welcome your questions and inquiries. 
+Please complete the form below, and a member of our team will respond as soon as possible.
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <h2>Failure is a stepping stone to success.</h2>
+  <p>Ridam</p>
+</section>
+
+<footer>
+  <div class="footer-name">Ridam</div>
+  <div class="socials">
+    <a href="#">X</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Instagram</a>
+  </div>
+</footer>
+
+</body>
+</html>

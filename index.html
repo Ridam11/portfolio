@@ -1,110 +1,151 @@
-<html>
+
+
+ !DOCTYPE html>
+<html lang="en">
 <head>
-    <title>webpage</title>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+        .hero {
+            height: 90vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://picsum.photos/1600/900') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0097a7;
+        }
+
+        /* Section */
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            color: #555;
+        }
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
-<style>
-    nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li a:hover {
-    color: blue;
-}
-
-.content {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-
-
-
-.text-box p {
-    text-align: justify;
-    color: brown;
-    font-size: 12px;
-}
-
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background: #222;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #222;
-      color: #fff;
-      margin-top: 40px;
-    }
-
-</style>
 <body>
 
-    <div class="container">
+    <header>
+        <h1>Ridam</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-  
-        <header>
-            <h1>My page</h1><hr>
-            <nav>
-                <ul>
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="blogs.html">BLOG</a></li>
-                </ul>
-            </nav>
-        </header>
+    <section class="hero">
+        <div>
+            <h2>Welcome to My Website</h2>
+            <p>We create modern and responsive websites for your business.</p>
+            <a href="about.html" class="btn">Get Started</a>
+        </div>
+    </section>
 
-        <section class="content">
-            <img src="html 2/Screenshot 2026-02-05 204020.png" height="100" width="200">
+    <section class="section">
+        <h3>About Us</h3>
+        <p>
+            We are a professional web development company providing high quality,
+            modern, and mobile-friendly websites. Our goal is to help your business grow online.
+        </p>
+    </section>
 
-            <div class="text-box">
-                <h2>Image Title</h2>
-                <p>
-                    vjhhkjni ggbgbuiloi
-                </p>
-You sent
-</div>
-        </section>
-
-        <footer>
-            © Copyright ridam 2026
-        </footer>
-
-    </div>
+    <footer>
+        <p>© 2026 Ridam | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
-You sent
-
- 

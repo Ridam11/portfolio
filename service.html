@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #00c3ff;
+        }
+
+        /* Page Title */
+        .page-title {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background: white;
+            width: 30%;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-box h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .service-box p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyWebsite</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Our Services</h1>
+        <p>We provide high-quality web solutions for your business.</p>
+    </section>
+
+    <section class="services">
+        <div class="service-box">
+            <h3>Web Development</h3>
+            <p>Custom websites built with modern technologies and responsive design.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>UI/UX Design</h3>
+            <p>Creative and user-friendly designs to improve user experience.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>SEO Optimization</h3>
+            <p>Improve your website ranking and grow your online presence.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>E-commerce Solutions</h3>
+            <p>Build powerful online stores with secure payment integration.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Website Maintenance</h3>
+            <p>Regular updates and maintenance to keep your site secure and fast.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>Digital Marketing</h3>
+            <p>Promote your business with modern digital marketing strategies.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ridam | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
